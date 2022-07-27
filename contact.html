@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="popup.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <title>API events</title>
+</head>
+
+<body>
+
+  
+
+    <!--Navigation-->
+
+    <div class="navbar w-100 h-auto" style="background-color:rgb(31,37,61)">
+      <div class="container w-100 ">
+        <div class="logo pl-2">
+          <div class="logo-img">
+            <img src="images/logo.png" class="  rounded-circle" alt="logo">
+          </div>
+        </div>
+        <div class="hamburger-menu" onclick="openMenu()">
+          <img src="images/icons8-menu-64.png" alt="">
+        </div>
+        <div class="menu px-2">
+          <ul class="nav justify-content-end ">
+            <li class="close-menu">
+              <a href="" onclick="closeMenu()"><span style="margin-left:120px; width:20px"><img src="images/icons8-multiply-30.png" alt=""></span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link mt-2" href="popupvideo.html">HOME</a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link mt-2 " href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn">BUY TICKET</button>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="container contact-detail ">
+        <h2 class="display-4 ">Contact us</h2>
+
+      </div>
+
+      <!--breadcrums-->
+
+      <div class="container pb-4">
+       <ul class="breadcrumb-navigation ">
+            <li ><a href="index.html">HOME</a></li>
+            <li ><a href="contact.html">CONTACT US</a></li>
+            
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--footer-->
+    
+   <div class="container w-75 text-center footer mt-5">
+    <div class="row d-flex">
+        <div class="col">
+          <img src="images/icons8-location-50.png" alt="">
+          <h2 class="pb-2" >Location</h2>
+          <p>51 Francis Street, Darlinghurst NSW,<br> SanFrancisco, United States</p>
+        </div>
+        <div class="col">
+          <img src="images/icons8-mail-50.png" alt="">
+            <h2 class="pb-2">Mail Address</h2>
+            <p>emeet.info@example.com <br>
+                info@example.com</p>
+        </div>
+        <div class="col ">
+          <img src="images/icons8-phone-50.png" alt="">
+            <h2 class="pb-2">Contact No</h2>
+            <p>+00-000000001 456 <br>
+                +00-000000002 658</p>
+        </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+   function openMenu(){
+    document.querySelector(".menu ul").style="display:initial;"
+    document.querySelector(".hamburger-menu").style="display:none;"
+    }
+    function closeMenu(){
+      document.querySelector(".menu ul").style="display:none;"
+    document.querySelector(".hamburger-menu").style="display:initial;"
+    }
+  </script>
+    
+    </body>
+    </html>
