@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-  <title>API Events</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <title>API Events</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         </div>
         <div class="menu px-2">
 
-          <ul class="nav justify-content-end " >
+          <ul class="nav justify-content-end align-items-center " >
             <li class="close-menu ">
               <a href="" onclick="closeMenu()"><img src="images/icons8-multiply-30.png" alt=""></a>
             </li>
@@ -41,33 +41,17 @@
               <a class="nav-link mt-2 pr-3" href="contact.html">CONTACT</a>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn">BUY TICKET</button>
+              <button type="button" class="btn btn-buy-ticket">BUY TICKET</button>
             </li>
           </ul>
 
         </div>
 
       </div>
-    </div>
-
-    <!--Event Description-->
-    <div class="description">
-      <div class="banner-desc">
-        <h1>Hurryup! Learn Anything Advance</h1>
-        <h2>World Emeet <br> Biggest Conference
-          <span style="color:#ec398b">2</span><span style="color:#efa506">0</span><span style="color:#4271f0">2</span>2
-        </h2><br>
-        <div class="d-flex venue">
-          <p> <img src="images/location.png" alt="">
-            Babarmahal,Kathmandu</p>
-          <p >04-08 August</p>
-        </div>
-        <div class="popupvideo">
-          <a href="#" onclick="toggle()"> <img src="images/icons8-play-45.png"
-              alt="">Watch promo video</a>
-        </div>
+      <div class="promo-video">
         <div class="trailer">
-          <video src="Introduction-to-html.mp4" controls="true"></video>
+          <iframe src="https://www.youtube.com/embed/XG8nJDWu3a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <video src="Introduction-to-html.mp4" controls="true"></video> -->
           <a href="" onclick="close()"><img src="images/icons8-close-50.png" class="close"></a>
 
         </div>
@@ -79,13 +63,73 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <div class="carousel-slider-image">
           <img src="images/img2.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-          <img src="images/img2.jpg" class="d-block w-100" alt="...">
+          <div class="description">
+            <div class="banner-desc">
+              <h1>API Events</h1>
+              <h2>World Emeet <br> Biggest Conference
+                <span style="color:#ec398b">2</span><span style="color:#efa506">0</span><span style="color:#4271f0">2</span>2
+              </h2><br>
+              <div class="d-flex venue">
+                <p> <img src="images/location.png" alt="">
+                  Babarmahal,Kathmandu</p>
+                <p >04-08 August</p>
+              </div>
+              <div class="popupvideo">
+                <a href="#" onclick="toggle()"> <img src="images/icons8-play-45.png"
+                    alt="">
+                  <span class="ms-1">Watch promo video</span>
+                  </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
+          <div class="carousel-slider-image">
           <img src="images/img2.jpg" class="d-block w-100" alt="...">
+        </div>
+          <div class="description">
+            <div class="banner-desc">
+              <h1>Join us now</h1>
+              <h2>World Emeet <br> Biggest Conference
+                <span style="color:#ec398b">2</span><span style="color:#efa506">0</span><span style="color:#4271f0">2</span>2
+              </h2><br>
+              <div class="d-flex venue">
+                <p> <img src="images/location.png" alt="">
+                  Babarmahal,Kathmandu</p>
+                <p >04-08 August</p>
+              </div>
+              <div class="popupvideo">
+                <a href="#" onclick="toggle()"> <img src="images/icons8-play-45.png"
+                    alt="">Watch promo video</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-slider-image">
+          <img src="images/img2.jpg" class="d-block w-100" alt="...">
+        </div>
+          <div class="description">
+            <div class="banner-desc">
+              <h1>Hurryup! Learn Anything Advance</h1>
+              <h2>World Emeet <br> Biggest Conference
+                <span style="color:#ec398b">2</span><span style="color:#efa506">0</span><span style="color:#4271f0">2</span>2
+              </h2><br>
+              <div class="d-flex venue">
+                <p> <img src="images/location.png" alt="">
+                  Babarmahal,Kathmandu</p>
+                <p >04-08 August</p>
+              </div>
+              <div class="popupvideo">
+                <a href="#" onclick="toggle()"> <img src="images/icons8-play-45.png"
+                    alt="">Watch promo video</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
