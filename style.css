@@ -140,6 +140,7 @@ body{
   align-items: center;
   visibility: hidden;
   opacity: 0;
+  left:0px;
 }
 .trailer iframe{
   width:700px;
@@ -157,8 +158,43 @@ body{
   outline: none;
 }
 .popupvideo {
-  margin-left:-20px;
-  margin-top: 0px;
+  margin-left:0px;
+  margin-top: 30px;
+}
+.popupvideo button{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  
+  margin: 30px 0;
+  background-color: #efa506;
+  color: white;
+  border: transparent;
+  padding: 15px 24px;
+  font-weight: 600;
+  transition: all 300ms ;
+}
+
+.popupvideo button:hover{
+  background-color:  white ;
+  color:#2F2A22;
+  border: transparent;
+  padding: 15px 24px;
+  border-radius: 15px;
+}
+.popupvideo button:hover .popupvideo-btn{
+  fill: #2F2A22;
+  width: 20px;
+}
+.popupvideo  .popupvideo-text{
+  font-size:1.2em;
+}
+.popupvideo-btn{
+  fill: white;
+  width: 20px;
+  transition: all 300ms ;
+
 }
 .promo-video{
   position:absolute;
@@ -205,6 +241,9 @@ body{
 .close-menu {
   display: none;
 }
+.navbar{
+  justify-content: center;
+}
 
 @media (max-width: 991px) {
   .trailer video {
@@ -213,7 +252,7 @@ body{
   .description {
     width: 81%;
     left: 83px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
   .trailer iframe{
     width:600px;
@@ -276,18 +315,14 @@ body{
     margin-left: 0px;
     margin-top: -15px;
   }
-  /* .popupvideo img {
-    width: 20px;
-    height: 20px;
-  } */
   .logo-img img {
     width: 150px;
     height: 150px;
     margin-top: 50px;
   }
   .description {
-    margin-top: 50px;
-    margin-left: 20px;
+    padding: 0px 20px;
+
   }
   .carousel-slider-image img{
     width:450px;
@@ -321,18 +356,36 @@ body{
 }
 
 @media (max-width: 550px) {
+  .popupvideo{
+    width: 100%;
+  }
+  .contact-title{
+    text-align: center;
+  }
+  .popupvideo button{
+    
+    justify-content: center;
+    width: 100%;
+  }
   .contact-detail {
-    padding-left: 50px;
+    padding-left: 0px;
   }
   .breadcrumb-navigation {
     margin-left: 10px;
+  }
+  .breadcrumb-navigation ol,  ul{
+    padding-left: 0px !important;
   }
   .description {
     top: 180px;
     width: 100%;
     left: -10px;
-    min-height: 100%;
   }
+
+.popupvideo button{
+  margin-top: 70px;
+}
+
   .hamburger-menu {
     margin-right: -120px;
     margin-top: -15px;
@@ -344,11 +397,14 @@ body{
   .logo-img img {
     width: 180px;
     height: 180px;
-    margin-top: 50px;
     margin-left:-40px;
   }
   .venue {
     margin-top: -15px;
+  }
+  .venue img{
+    width:40px;
+    height:40px;
   }
   
   .trailer iframe{
@@ -396,7 +452,7 @@ body{
     margin-left: 115px;
   }
   .contact-detail {
-    padding-left: 20px;
+    justify-content: center;
   }
   .breadcrumb-navigation {
     margin-left: 5px;
@@ -413,7 +469,6 @@ body{
     top: 180px;
     width: 100%;
     left: 0px;
-    min-height: 100%;
   }
   .banner-desc h1{
     font-size:1.8em;
@@ -436,9 +491,7 @@ body{
     width:15px;
     height:15px;
   }
-  .popupvideo {
-    margin-top: -25px;
-  }
+  
   /* .popupvideo img{
     width:15px;
     height:15px;
@@ -446,8 +499,6 @@ body{
   .logo-img img {
     width: 170px;
     height: 170px;
-    margin-top: 40px;
-    margin-left:-40px;
   }
   .trailer iframe{
     width:300px;
@@ -473,7 +524,6 @@ body{
     top: 150px;
     width: 100%;
     left: -10px;
-    min-height: 100%;
   }
   .menu{
     margin:-80px 0 0 60px;
