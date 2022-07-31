@@ -223,10 +223,10 @@ body{
   color: #fff;
   font-weight: 500;
   line-height: 100%;
-  padding-left: 150px;
+  padding-left: 60px;
 }
 .breadcrumb-navigation {
-  margin-left: 150px;
+  padding-left: 80px;
   margin-top: 10px;
 }
 .hamburger-menu {
@@ -543,13 +543,13 @@ body{
 
 .carousel-control-next, .carousel-control-prev{
    
-  display: none;
+  width:25px !important;
  }
 
 @media (min-width:768px){
   .carousel-control-next, .carousel-control-prev{
    display: block;
-   width:50px !important;
+   width:110px !important;
    
   }
 
