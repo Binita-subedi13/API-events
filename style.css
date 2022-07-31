@@ -374,6 +374,7 @@ body{
   .logo-img img {
     width: 180px;
     height: 180px;
+    margin-left:-30px;
   }
   .venue {
     margin-top: -15px;
