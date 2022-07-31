@@ -39,10 +39,7 @@ body{
 .nav-item a:hover {
   color: #efa506;
 }
-.menu {
-  margin-top: -50px;
-  margin-right: 50px;
-}
+
 .btn {
   background-color: #ec398b;
   border-radius: 0%;
@@ -157,16 +154,11 @@ body{
   max-width: 980px;
   outline: none;
 }
-.popupvideo {
-  margin-left:0px;
-  margin-top: 30px;
-}
 .popupvideo button{
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10px;
-  
   margin: 30px 0;
   background-color: #efa506;
   color: white;
@@ -235,7 +227,6 @@ body{
   margin-top: 10px;
 }
 .hamburger-menu {
-  margin-right: -390px;
   display: none;
 }
 .close-menu {
@@ -283,11 +274,6 @@ body{
 }
 
 @media (max-width: 790px) {
-  .menu {
-    margin-right: 0px;
-    top: -200px;
-    margin-top: 0;
-  }
   .menu ul {
     display: flex;
     flex-direction: column;
@@ -305,19 +291,14 @@ body{
      width:20px
   }
   .hamburger-menu {
-    margin-right: -320px;
     display: initial;
   }
   .close-menu {
     display: initial;
   }
-  .popupvideo {
-    margin-left: 0px;
-    margin-top: -15px;
-  }
   .logo-img img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
   }
   .description {
@@ -386,10 +367,6 @@ body{
   margin-top: 70px;
 }
 
-  .hamburger-menu {
-    margin-right: -120px;
-    margin-top: -15px;
-  }
   .hamburger-menu img{
     width:40px;
     height:40px;
@@ -397,7 +374,6 @@ body{
   .logo-img img {
     width: 180px;
     height: 180px;
-    margin-left:-40px;
   }
   .venue {
     margin-top: -15px;
@@ -441,11 +417,6 @@ body{
 }
 
 @media (max-width: 400px) {
-  .menu {
-    margin-right:-36px;
-    margin-top: -170px;
-    margin-left:200px;
-    } 
   
   .close-menu img{
      margin-top: 29px;
@@ -457,9 +428,9 @@ body{
   .breadcrumb-navigation {
     margin-left: 5px;
   }
-  .hamburger-menu {
-    margin-right: -250px;
-    margin-top:-15px;
+  .navbar .container{
+    flex-wrap: unset ;
+    justify-content: space-around;
   }
   .hamburger-menu img{
     width:40px;
@@ -532,14 +503,9 @@ body{
     margin-top: 84px;
     margin-left: 90px;
 }
-  .hamburger-menu {
-    margin-right: -125px;
-    margin-top:-35px;
-  }
   .logo-img img{
     width: 150px;
     height: 150px;
-    margin-left:-30px;
   }
   .navbar .container{
     flex-wrap: nowrap;
